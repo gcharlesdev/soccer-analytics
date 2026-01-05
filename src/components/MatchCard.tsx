@@ -57,7 +57,7 @@ function MatchCard({ match }: MatchCardProps) {
               isFinished && score.winner === "HOME_TEAM" ? "text-green-400" : ""
             }`}
           >
-            {score.fullTime.homeTeam ?? "-"}
+            {score.fullTime.home ?? "-"}
           </span>
         </div>
 
@@ -76,7 +76,7 @@ function MatchCard({ match }: MatchCardProps) {
               isFinished && score.winner === "AWAY_TEAM" ? "text-green-400" : ""
             }`}
           >
-            {score.fullTime.awayTeam ?? "-"}
+            {score.fullTime.away ?? "-"}
           </span>
         </div>
       </div>

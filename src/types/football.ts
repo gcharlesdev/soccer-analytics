@@ -77,12 +77,12 @@ export type MatchStatus =
 export interface Score {
   winner: "HOME_TEAM" | "AWAY_TEAM" | "DRAW" | null;
   fullTime: {
-    homeTeam: number | null;
-    awayTeam: number | null;
+    home: number | null;
+    away: number | null;
   };
   halfTime: {
-    homeTeam: number | null;
-    awayTeam: number | null;
+    home: number | null;
+    away: number | null;
   };
 }
 
