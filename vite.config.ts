@@ -12,6 +12,11 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [react()],
+    test: {
+      enviroment: "jsdom",
+      globals: true,
+      setupFiles: ["./src/test/setup.ts"],
+    },
     server: {
       proxy: {
         "/api/football": {
